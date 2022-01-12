@@ -9,7 +9,7 @@
     "start": "npm-run-all --parallel 'watch:*'",
     "watch:start": "parcel serve src/index.html --dist-dir serve",
     "watch:css": "tailwindcss -i src/style.scss -o src/assets/tailwind.css -w --minify",
-    "build": "yarn parcel build src/**/*.html"
+    "build": "yarn parcel build src/**/*.html --dist-dir public"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
