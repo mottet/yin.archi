@@ -1,0 +1,14 @@
+.grid-text-images {
+  height: 100%;
+  display: grid;
+  grid-template:
+    "text images" / 1fr 1fr;
+}
+
+.grid-text {
+  grid-area: text;
+}
+
+.grid-image {
+  grid-area: images;
+}

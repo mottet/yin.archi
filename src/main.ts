@@ -22,11 +22,11 @@ const lenis = new Lenis()
 // };
 // requestAnimationFrame(scrollFn);
 
-lenis.on('scroll', (e: any) => {
-  console.log(e)
-})
+// lenis.on('scroll', (e: any) => {
+//   console.log(e)
+// })
 
-lenis.on('scroll', ScrollTrigger.update)
+//lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000)
@@ -34,7 +34,7 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0)
 
-const buildSection = (imageSrc: string) => {
+function buildSection(imageSrc: string) {
   const image = document.createElement('img');
   image.src = imageSrc;
   const section = document.createElement('div');
@@ -50,24 +50,44 @@ const allImages = [
   blueTeaSet,
 ];
 
-const app = document.querySelector<HTMLDivElement>('#app')!;
+const app = document.querySelector<HTMLDivElement>('#app');
 
-for (let imageSrc of allImages) {
-  const [section, image] = buildSection(imageSrc);
-  app.appendChild(section);
+if (app) {
+  for (let imageSrc of allImages) {
+    const [section, image] = buildSection(imageSrc);
+    app.appendChild(section);
 
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: section,
-      scrub: true,
-      pin: true,
-    }
-  })
-
-    .from(image, {
-      ease: 'none',
-      scale: 0.5,
-      borderRadius: '50%'
-    });
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        scrub: true,
+        pin: true
+      }
+    })
+      .from(image, {
+        ease: 'none',
+        scale: 0.5,
+        borderRadius: '50%'
+      });
+  }
 }
 
+const firstGrid = document.querySelector<HTMLDivElement>('#first-grid')!;
+
+const firstGridImages = firstGrid.querySelectorAll("img");
+
+for (const image of firstGridImages) {
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: firstGrid,
+      scrub: true,
+      pin: image,
+      start: "top center",
+      end: "top top"
+    }
+  })
+    .from(image, {
+      ease: 'none',
+      xPercent: '100',
+    });
+}
