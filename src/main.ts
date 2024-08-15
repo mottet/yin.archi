@@ -43,6 +43,23 @@ function buildSection(imageSrc: string) {
   return [section, image];
 }
 
+const firstGrid = document.querySelector<HTMLDivElement>('#first-grid')!;
+
+const firstGridImages = firstGrid.querySelectorAll("img");
+
+gsap.to(firstGridImages, {
+  xPercent: -100 * (firstGridImages.length + 1),
+  zIndex: 0,
+  ease: "none",
+  scrollTrigger: {
+    trigger: firstGrid,
+    pin: true,
+    scrub: 1,
+    end: `${(firstGridImages.length + 1) * 100}%`,
+  }
+});
+
+
 const allImages = [
   whiteTeaSet,
   whiteTeaSet2,
@@ -70,24 +87,4 @@ if (app) {
         borderRadius: '50%'
       });
   }
-}
-
-const firstGrid = document.querySelector<HTMLDivElement>('#first-grid')!;
-
-const firstGridImages = firstGrid.querySelectorAll("img");
-
-for (const image of firstGridImages) {
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: firstGrid,
-      scrub: true,
-      pin: image,
-      start: "top center",
-      end: "top top"
-    }
-  })
-    .from(image, {
-      ease: 'none',
-      xPercent: '100',
-    });
 }
