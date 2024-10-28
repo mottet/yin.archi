@@ -70,7 +70,7 @@ const projects: Record<string, ProjectPageProps> = {
         descriptions: [
             "Le but de ce projet est de créer une chaise qui pourrait être empilée tout en étant convenable pour son environnement, un musée parisien. J’ai choisi le Musée d’Orsay comme client. Je vise à créer une élégante et pratique chaise qui peut relier son design à l’architecture conçue par Gae Aulenti. On peut voir clairement les éléments architecturaux de l’art nouveau et du modernisme dans le design d’Aulenti. Par conséquent, je veux aussi que ma chaise montre ces caractéristiques à travers la forme, les couleurs et les matières."
         ]
-     }
+    }
 };
 
 
@@ -80,12 +80,13 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-                <Link href="/" passHref>
+                <div className="md:hidden h-6"></div>
+                {/* <Link href="/" passHref>
                     <Button variant="ghost" className="mb-8 text-gray-600 hover:text-gray-900">
                         <ChevronLeft className="mr-2 h-4 w-4" />
-                        Back to Portfolio
+                        Back
                     </Button>
-                </Link>
+                </Link> */}
 
                 <h1 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">{title}</h1>
                 <p className="text-xl text-gray-600 mb-8 font-light">{type}</p>
