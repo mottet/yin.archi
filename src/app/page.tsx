@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function HomePage() {
@@ -5,7 +6,7 @@ export default function HomePage() {
     <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <img
+        <Image
           src="/image 4_CShading_LightMix.jpg"
           alt="Common space in ceramist center"
           className="w-full h-full object-cover"
@@ -23,15 +24,15 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-800">About Me</h2>
         <div className="space-y-4 text-gray-600">
           <p>
-            Diplômé en 2024 d'un Master en Architecture d'Intérieur, avec 2 ans d'expérience chez alfred studio,
+            Diplômé en 2024 d&apos;un Master en Architecture d&apos;Intérieur, avec 2 ans d&apos;expérience chez alfred studio,
             je participe à toutes les phases des projets, de la conception initiale au suivi des travaux.
             Mon rôle inclut la réalisation de plans, coupes et visuels 3D pour les présentations,
             ainsi que la collaboration avec les clients, fournisseurs et entreprises pour concrétiser les projets.
           </p>
           <p>
-            Après avoir étudié aux États-Unis et à Taïwan, j'ai développé une grande ouverture aux différentes cultures
-            et je parle couramment l'anglais, le mandarin et le français. Ma passion réside dans la création de relations
-            spatiales qui enrichissent les expériences de vie, et je crois fermement en une conception axée sur l'économie
+            Après avoir étudié aux États-Unis et à Taïwan, j&apos;ai développé une grande ouverture aux différentes cultures
+            et je parle couramment l&apos;anglais, le mandarin et le français. Ma passion réside dans la création de relations
+            spatiales qui enrichissent les expériences de vie, et je crois fermement en une conception axée sur l&apos;économie
             circulaire, visant à réduire les déchets et à améliorer la qualité de vie à long terme.
           </p>
         </div>

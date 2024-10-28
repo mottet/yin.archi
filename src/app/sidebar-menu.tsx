@@ -90,9 +90,11 @@ export const MobileSidebar = () => {
   )
 }
 
-export default () => (
-  <>
-    <DesktopSidebar />
-    <MobileSidebar />
-  </>
-)
+export default function Sidebar() {
+  return (
+    <>
+      <DesktopSidebar />
+      <MobileSidebar />
+    </>
+  );
+}
