@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
 export default function HomePage() {
@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <Image
+        <img
           src="/image 4_CShading_LightMix.jpg"
           alt="Common space in ceramist center"
           className="w-full h-full object-cover"

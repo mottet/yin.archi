@@ -12,8 +12,8 @@ import clsx from 'clsx';
 
 const projects = [
   { slug: 'centre-culturel-ceramistes', name: "CENTRE CULTUREL et RESIDENCE de céramistes", type: "Interior" },
-  { slug: 'fablab-info-elec', name: "FABLAB d’informatique et d’électronique", type: "Interior" },
-  { slug: 'ecole-archi-st-lazard', name: "ECOLE d’architecture à Paris Saint-Lazare", type: "Interior" },
+  { slug: 'fablab-info-elec', name: "FABLAB d'informatique et d'électronique", type: "Interior" },
+  { slug: 'ecole-archi-st-lazard', name: "ECOLE d'architecture à Paris Saint-Lazare", type: "Interior" },
   { slug: 'retail-invivo-synbio', name: "RETAIL Invivo Synbio", type: "Interior" },
   { slug: 'meuble-vitrine-tama', name: "MEUBLE VITRINE Tama", type: "Design" },
   { slug: 'desserte-vi-vant', name: "DESSERTE de coworking Vi-Vant", type: "Design" },
