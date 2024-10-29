@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import React from 'react'
 
 export default function HomePage() {
@@ -6,10 +6,11 @@ export default function HomePage() {
     <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <img
-          src="/image 4_CShading_LightMix.jpg"
+        <Image
+          src="/4_CShading_LightMix.webp"
           alt="Common space in ceramist center"
           className="w-full h-full object-cover"
+          fill
         />
         <div className="absolute inset-0">
           <div className="px-10 py-24 text-right">
