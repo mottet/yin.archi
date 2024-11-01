@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 // import { ChevronLeft } from "lucide-react"
 // import { Button } from "@/components/ui/button"
@@ -19,6 +20,25 @@ const projects: Record<string, ProjectPageProps> = {
             "Pour cela, le centre favorise la collaboration entre artisans céramistes afin d'enrichir leurs pratiques et de partager leurs expériences. Il offre un espace inspirant aux artisans céramistes, leur permettant de se ressourcer créativement et d'expérimenter de nouvelles techniques. De plus, le centre promeut auprès du public local les arts de la céramique. Enfin, des cérémonies du thé sont organisées pour montrer l'impact culturel que peut avoir l'artisanat, tout en faisant voyager les visiteurs.",
             "Résidence et Atelier de Céramique\nL'objectif est de réunir les artisans et le public. Je propose donc d'installer la résidence et l'atelier de céramique dans le bâtiment long, permettant aux artisans de se rendre facilement à leur travail, de rencontrer des gens et de partager leurs créations. La résidence devient un lieu de vie et d'échange entre artisans, tandis que l'atelier, ouvert au public, offre un espace pour apprendre et créer de la poterie. Impliquer les gens dans l'artisanat leur fait découvrir la valeur du fait main. De plus, l'atelier permet de réduire la consommation d'énergie en regroupant les cuissons.",
             "Pavillon de thé\nEn Asie, la céramique et le thé sont indissociables, formant un pont culturel qui invite les gens à découvrir l'art du thé. Ce lieu met en valeur l'impact culturel des artisans tout en offrant une pause sereine aux visiteurs et aux artisans lors de la dégustation du thé."
+        ],
+        images: [
+            "CONCEPT entre les deux espace_rapprocher la nature_parte 1.webp",
+            "CONCEPT entre les deux espace_rapprocher la nature_parte 2.webp",
+            "PLAN _atelier et residence R+1_50e.webp",
+            "PLAN _atelier et residence RDC_50e.webp",
+            "PLANS _salon de thé+COUPE AA_50e.webp",
+            "Résidence Atelier Coupe AA 50e bis.webp",
+            "Résidence Atelier Coupe AA 50e.webp",
+            "Résidence Coupe BB 50e_frist try.webp",
+            "Résidence Coupe CC 50e.webp",
+            "Salon de thé à étage_CShading_LightMix.webp",
+            "image 1_CShading_LightMix.webp",
+            "image 2_CShading_LightMix.webp",
+            "image 3_CShading_LightMix.webp",
+            "image 4_CShading_LightMix.webp",
+            "image 6 _with lighting _CShading_LightMix.webp",
+            "image SDT escalier_CShading_LightMix.webp",
+            "salon de thé COUPE BB_50e.webp",
         ]
     },
     "fablab-info-elec": {
@@ -81,7 +101,7 @@ export function generateStaticParams() {
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const { title, type, descriptions } = projects[slug];
+    const { title, type, descriptions, images } = projects[slug];
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
@@ -102,16 +122,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     ))}
                 </div>
 
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`${title} - Image ${index + 1}`}
-                            className="w-full h-64 object-cover rounded-lg shadow-md"
-                        />
-                    ))}
-                </div> */}
+                {images && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {images.map((image, index) => (
+                            <Image
+                                key={index}
+                                src={image}
+                                alt={`${title} - Image ${index + 1}`}
+                                className="w-full h-64 object-cover rounded-lg shadow-md"
+                            />
+                        ))}
+                    </div>)}
             </div>
         </div>
     )
