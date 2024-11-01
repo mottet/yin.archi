@@ -1,13 +1,11 @@
 import Image from "next/image"
 import React from "react"
-// import { ChevronLeft } from "lucide-react"
-// import { Button } from "@/components/ui/button"
-// import Link from "next/link"
 
 interface ProjectPageProps {
     title: string
     type: string
     descriptions: string[]
+    imagesFolder?: string
     images?: string[]
 }
 
@@ -21,24 +19,25 @@ const projects: Record<string, ProjectPageProps> = {
             "Résidence et Atelier de Céramique\nL'objectif est de réunir les artisans et le public. Je propose donc d'installer la résidence et l'atelier de céramique dans le bâtiment long, permettant aux artisans de se rendre facilement à leur travail, de rencontrer des gens et de partager leurs créations. La résidence devient un lieu de vie et d'échange entre artisans, tandis que l'atelier, ouvert au public, offre un espace pour apprendre et créer de la poterie. Impliquer les gens dans l'artisanat leur fait découvrir la valeur du fait main. De plus, l'atelier permet de réduire la consommation d'énergie en regroupant les cuissons.",
             "Pavillon de thé\nEn Asie, la céramique et le thé sont indissociables, formant un pont culturel qui invite les gens à découvrir l'art du thé. Ce lieu met en valeur l'impact culturel des artisans tout en offrant une pause sereine aux visiteurs et aux artisans lors de la dégustation du thé."
         ],
+        imagesFolder: "/DAI 5",
         images: [
-            "CONCEPT entre les deux espace_rapprocher la nature_parte 1.webp",
-            "CONCEPT entre les deux espace_rapprocher la nature_parte 2.webp",
-            "PLAN _atelier et residence R+1_50e.webp",
-            "PLAN _atelier et residence RDC_50e.webp",
-            "PLANS _salon de thé+COUPE AA_50e.webp",
-            "Résidence Atelier Coupe AA 50e bis.webp",
-            "Résidence Atelier Coupe AA 50e.webp",
-            "Résidence Coupe BB 50e_frist try.webp",
-            "Résidence Coupe CC 50e.webp",
-            "Salon de thé à étage_CShading_LightMix.webp",
-            "image 1_CShading_LightMix.webp",
-            "image 2_CShading_LightMix.webp",
-            "image 3_CShading_LightMix.webp",
-            "image 4_CShading_LightMix.webp",
-            "image 6 _with lighting _CShading_LightMix.webp",
-            "image SDT escalier_CShading_LightMix.webp",
-            "salon de thé COUPE BB_50e.webp",
+            "image 1_CShading_LightMix",
+            "image 2_CShading_LightMix",
+            "image 3_CShading_LightMix",
+            "image 4_CShading_LightMix",
+            "image 6 _with lighting _CShading_LightMix",
+            "image SDT escalier_CShading_LightMix",
+            "Salon de thé à étage_CShading_LightMix",
+            "PLAN _atelier et residence RDC_50e",
+            "PLAN _atelier et residence R+1_50e",
+            "Résidence Atelier Coupe AA 50e",
+            "Résidence Atelier Coupe AA 50e bis",
+            "Résidence Coupe BB 50e_frist try",
+            "Résidence Coupe CC 50e",
+            "PLANS _salon de thé+COUPE AA_50e",
+            "salon de thé COUPE BB_50e",
+            "CONCEPT entre les deux espace_rapprocher la nature_parte 1",
+            "CONCEPT entre les deux espace_rapprocher la nature_parte 2",
         ]
     },
     "fablab-info-elec": {
@@ -49,6 +48,22 @@ const projects: Record<string, ProjectPageProps> = {
             "La transparence est choisie comme thème central pour attirer les visiteurs et encourager les interactions. Ce FabLab, dédié à l'informatique et à l'électronique, mettra en valeur le travail des participants tout en favorisant les échanges. L'espace architectural sera conçu pour éveiller la curiosité des visiteurs et les inciter à découvrir et expérimenter dans un cadre ouvert et accueillant.",
             "J'ai opté pour un FabLab spécialisé en informatique et électronique afin d'offrir un environnement où les gens peuvent explorer, apprendre et créer dans des domaines essentiels à notre époque numérique. Mon intention est de stimuler l'innovation et la collaboration en fournissant des outils et des ressources qui permettent de concrétiser des idées, d'expérimenter de nouvelles technologies et de contribuer à une communauté de créateurs et d'innovateurs. Je souhaite que cet espace devienne un lieu où chacun se sente libre de circuler, d'explorer et de s'immerger pleinement dans l'univers technologique.",
             "LES MATERIAUX\nLe sol est principalement en béton brut. Les cubes sont constitués de structures en bois avec des côtés en verre, tandis que le liège est utilisé pour le revêtement de sol à l'intérieur des cubes afin de réduire le bruit."
+        ],
+        imagesFolder: "/DAI 3",
+        images: [
+            "Extérior_vue de bâtiment du pont",
+            "Extérior_vue sous le passage courbe de l_auvent",
+            "Extérior_vue sur la quai de la Marne",
+            "Interior 1_co-working space",
+            "Interior 2_espace d_entrée",
+            "Interior 4_cube 2",
+            "Interior 5_connect to the gym",
+            "Interior 7_R+1 going through",
+            "plan de situation_meter-A2_",
+            "Rough_on the bridge",
+            "Rough_reception",
+            "Rough_under the bridge",
+            "ZOOM plan_A1-R+1_50e_couleur",
         ]
     },
     "ecole-archi-st-lazard": {
@@ -58,6 +73,18 @@ const projects: Record<string, ProjectPageProps> = {
             "Le Site\nLe site est situé dans une halle ferroviaire construite en 1886, au 1, rue de Saint-Pétersbourg, Paris 8, au cœur du quartier central des affaires. Vestige de l'architecture industrielle parisienne, cette halle bénéficie d'un accès facile, se trouvant entre la gare Saint-Lazare et les stations de métro Europe et Rome, dans un quartier animé.",
             "Problématique\nComment transformer un tiers de cette halle, actuellement dédiée à la messagerie et aux bureaux, en un espace d'apprentissage dynamique et stimulant pour une école d'architecture ? Le projet doit relever des défis tels que la pollution sonore, le manque de lumière naturelle et l'inconfort thermique, tout en préservant les éléments structurels pour valoriser le bâtiment existant.",
             "Projet\nIl s'agit de créer une école d'architecture de 3 250 m², destinée à accueillir  une totale de 250 à 300 étudiants et personnels. Cette école doit incarner l'idée de l'institution d'apprentissage de demain, un lieu où l'on partage des idées, s'implique activement, participe, observe, et s'enrichit des autres."
+        ],
+        imagesFolder: "/DAI 4",
+        images: [
+            "01_Entrée_vue de micro d_architecture",
+            "02_center point where connect different volumes",
+            "03_RDC_vue vers le grand panneau",
+            "04_R+1_vue vers la salles de cours",
+            "05_R+1_from one end to the other toward the tympan",
+            "06_vue vers le tympan",
+            "1200px-Genie_civil_1886_A6_T9_N13_P194_messageries_saint_lazare",
+            "1280px-Genie_civil_1886_A6_T9_N13_P193_messageries_saint_lazare",
+            "Quai8-bw",
         ]
     },
     "retail-invivo-synbio": {
@@ -101,18 +128,12 @@ export function generateStaticParams() {
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const { title, type, descriptions, images } = projects[slug];
+    const { title, type, descriptions, imagesFolder, images } = projects[slug];
+    const isDev = process.env.NODE_ENV === "development";
+    const imagePrefix = isDev ? "/images" : "";
     return (
-        <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen w-full mx-auto bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-                <div className="md:hidden h-6"></div>
-                {/* <Link href="/" passHref>
-                    <Button variant="ghost" className="mb-8 text-gray-600 hover:text-gray-900">
-                        <ChevronLeft className="mr-2 h-4 w-4" />
-                        Back
-                    </Button>
-                </Link> */}
-
                 <h1 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">{title}</h1>
                 <p className="text-xl text-gray-600 mb-8 font-light">{type}</p>
 
@@ -121,19 +142,25 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         <p key={index}>{paragraph}</p>
                     ))}
                 </div>
+            </div>
 
-                {images && (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        {images.map((image, index) => (
+            {Array.isArray(images) && images.length > 0 && (
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 gap-4 w-full">
+                        {images.map(image => (
                             <Image
-                                key={index}
-                                src={image}
-                                alt={`${title} - Image ${index + 1}`}
-                                className="w-full h-64 object-cover rounded-lg shadow-md"
+                                key={image}
+                                src={`${imagePrefix}${imagesFolder}/${image}.webp`}
+                                alt={image}
+                                width="1152"
+                                height="600"
+
+                                className="w-full object-cover rounded-lg shadow-md"
                             />
                         ))}
-                    </div>)}
-            </div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

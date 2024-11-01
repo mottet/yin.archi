@@ -12,7 +12,7 @@ export default function HomePage() {
           className="w-full h-full object-cover"
           fill
         />
-        <div className="absolute inset-0">
+        <div className="md:hidden absolute inset-0">
           <div className="px-10 py-24 text-right">
             <h2 className="text-3xl font-light text-gray-100 mb-2 tracking-wide">Jocelyn Pei-Hua YIN</h2>
             <p className="text-sm text-gray-200 mb-6 font-light tracking-wider">Interior Designer</p>

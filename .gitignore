@@ -12,10 +12,13 @@
 # next.js
 /.next/
 /out/
-/dist/
+
+# images
+/public/
 
 # production
 /build
+/dist/
 
 # misc
 .DS_Store
