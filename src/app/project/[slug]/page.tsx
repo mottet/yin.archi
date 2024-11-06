@@ -6,7 +6,11 @@ interface ProjectPageProps {
     type: string
     descriptions: string[]
     imagesFolder?: string
-    images?: string[]
+    images?: {
+        name: string
+        width: number
+        height: number
+    }[]
 }
 
 const projects: Record<string, ProjectPageProps> = {
@@ -21,23 +25,23 @@ const projects: Record<string, ProjectPageProps> = {
         ],
         imagesFolder: "/DAI 5",
         images: [
-            "image 1_CShading_LightMix",
-            "image 2_CShading_LightMix",
-            "image 3_CShading_LightMix",
-            "image 4_CShading_LightMix",
-            "image 6 _with lighting _CShading_LightMix",
-            "image SDT escalier_CShading_LightMix",
-            "Salon de thé à étage_CShading_LightMix",
-            "PLAN _atelier et residence RDC_50e",
-            "PLAN _atelier et residence R+1_50e",
-            "Résidence Atelier Coupe AA 50e",
-            "Résidence Atelier Coupe AA 50e bis",
-            "Résidence Coupe BB 50e_frist try",
-            "Résidence Coupe CC 50e",
-            "PLANS _salon de thé+COUPE AA_50e",
-            "salon de thé COUPE BB_50e",
-            "CONCEPT entre les deux espace_rapprocher la nature_parte 1",
-            "CONCEPT entre les deux espace_rapprocher la nature_parte 2",
+            { name: "image 1_CShading_LightMix", width: 1750, height: 1000 },
+            { name: "image 2_CShading_LightMix", width: 1750, height: 1000 },
+            { name: "image 3_CShading_LightMix", width: 1750, height: 1000 },
+            { name: "image 4_CShading_LightMix", width: 1750, height: 1000 },
+            { name: "image 6 _with lighting _CShading_LightMix", width: 1750, height: 1313 },
+            { name: "image SDT escalier_CShading_LightMix", width: 1000, height: 1000 },
+            { name: "Salon de thé à étage_CShading_LightMix", width: 1000, height: 1000 },
+            { name: "PLAN _atelier et residence RDC_50e", width: 2000, height: 810 },
+            { name: "PLAN _atelier et residence R+1_50e", width: 2000, height: 430 },
+            { name: "Résidence Atelier Coupe AA 50e", width: 2000, height: 621 },
+            { name: "Résidence Atelier Coupe AA 50e bis", width: 2000, height: 621 },
+            { name: "Résidence Coupe BB 50e_frist try", width: 1414, height: 1000 },
+            { name: "Résidence Coupe CC 50e", width: 1414, height: 1000 },
+            { name: "PLANS _salon de thé+COUPE AA_50e", width: 1414, height: 2000 },
+            { name: "salon de thé COUPE BB_50e", width: 2000, height: 832 },
+            { name: "CONCEPT entre les deux espace_rapprocher la nature_parte 1", width: 1600, height: 667 },
+            { name: "CONCEPT entre les deux espace_rapprocher la nature_parte 2", width: 1600, height: 667 }
         ]
     },
     "fablab-info-elec": {
@@ -51,19 +55,19 @@ const projects: Record<string, ProjectPageProps> = {
         ],
         imagesFolder: "/DAI 3",
         images: [
-            "Extérior_vue de bâtiment du pont",
-            "Extérior_vue sous le passage courbe de l_auvent",
-            "Extérior_vue sur la quai de la Marne",
-            "Interior 1_co-working space",
-            "Interior 2_espace d_entrée",
-            "Interior 4_cube 2",
-            "Interior 5_connect to the gym",
-            "Interior 7_R+1 going through",
-            "plan de situation_meter-A2_",
-            "Rough_on the bridge",
-            "Rough_reception",
-            "Rough_under the bridge",
-            "ZOOM plan_A1-R+1_50e_couleur",
+            { name: "Extérior_vue de bâtiment du pont", width: 1333, height: 1000 },
+            { name: "Extérior_vue sous le passage courbe de l_auvent", width: 1333, height: 1000 },
+            { name: "Extérior_vue sur la quai de la Marne", width: 1333, height: 1000 },
+            { name: "Interior 1_co-working space", width: 1333, height: 1000 },
+            { name: "Interior 2_espace d_entrée", width: 1333, height: 1000 },
+            { name: "Interior 4_cube 2", width: 1333, height: 1000 },
+            { name: "Interior 5_connect to the gym", width: 1333, height: 1000 },
+            { name: "Interior 7_R+1 going through", width: 1333, height: 1000 },
+            { name: "plan de situation_meter-A2_", width: 1379, height: 1000 },
+            { name: "Rough_on the bridge", width: 1400, height: 1000 },
+            { name: "Rough_reception", width: 1389, height: 1000 },
+            { name: "Rough_under the bridge", width: 1187, height: 1000 },
+            { name: "ZOOM plan_A1-R+1_50e_couleur", width: 1782, height: 1000 }
         ]
     },
     "ecole-archi-st-lazard": {
@@ -76,15 +80,15 @@ const projects: Record<string, ProjectPageProps> = {
         ],
         imagesFolder: "/DAI 4",
         images: [
-            "01_Entrée_vue de micro d_architecture",
-            "02_center point where connect different volumes",
-            "03_RDC_vue vers le grand panneau",
-            "04_R+1_vue vers la salles de cours",
-            "05_R+1_from one end to the other toward the tympan",
-            "06_vue vers le tympan",
-            "1200px-Genie_civil_1886_A6_T9_N13_P194_messageries_saint_lazare",
-            "1280px-Genie_civil_1886_A6_T9_N13_P193_messageries_saint_lazare",
-            "Quai8-bw",
+            { name: "01_Entrée_vue de micro d_architecture", width: 1556, height: 1000 },
+            { name: "02_center point where connect different volumes", width: 1556, height: 1000 },
+            { name: "03_RDC_vue vers le grand panneau", width: 1556, height: 1000 },
+            { name: "04_R+1_vue vers la salles de cours", width: 1556, height: 1000 },
+            { name: "05_R+1_from one end to the other toward the tympan", width: 1556, height: 1000 },
+            { name: "06_vue vers le tympan", width: 1556, height: 1000 },
+            { name: "1200px-Genie_civil_1886_A6_T9_N13_P194_messageries_saint_lazare", width: 1200, height: 604 },
+            { name: "1280px-Genie_civil_1886_A6_T9_N13_P193_messageries_saint_lazare", width: 1280, height: 964 },
+            { name: "Quai8-bw", width: 950, height: 631 }
         ]
     },
     "retail-invivo-synbio": {
@@ -149,12 +153,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     <div className="grid grid-cols-1 gap-4 w-full">
                         {images.map(image => (
                             <Image
-                                key={image}
-                                src={`${imagePrefix}${imagesFolder}/${image}.webp`}
-                                alt={image}
-                                width="1152"
-                                height="600"
-
+                                key={image.name}
+                                src={`${imagePrefix}${imagesFolder}/${image.name}.webp`}
+                                alt={image.name}
+                                width={image.width}
+                                height={image.height}
                                 className="w-full object-cover rounded-lg shadow-md"
                             />
                         ))}
