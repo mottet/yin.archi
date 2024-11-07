@@ -10,6 +10,7 @@ export default function HomePage() {
           src="/4_CShading_LightMix.webp"
           alt="Common space in ceramist center"
           className="w-full h-full object-cover"
+          quality={100}
           fill
         />
         <div className="md:hidden absolute inset-0">

@@ -25,7 +25,7 @@ function ProjectList({ onLinkClick }: { onLinkClick?: () => void }) {
 
   return (
     <ScrollArea className="flex-grow">
-      <nav className="px-4">
+      <nav className="px-4 pb-8">
         {projects.map((project) => (
           <Link
             key={project.slug}
@@ -56,7 +56,7 @@ export const DesktopSidebar = () => (
   <div className="hidden md:block">
     <aside className="w-80 bg-gray-50 border-r border-gray-200 h-screen sticky top-0 overflow-hidden flex flex-col">
       <Link href="/">
-        <div className="p-8">
+        <div className="p-8 pb-0">
           <h2 className="text-3xl font-light text-gray-800 mb-2 tracking-wide">Jocelyn Pei-Hua YIN</h2>
           <p className="text-sm text-gray-600 mb-6 font-light tracking-wider">Interior Designer</p>
         </div>
@@ -76,14 +76,19 @@ export const MobileSidebar = () => {
             <Menu className="h-4 w-4" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="p-0 w-lvw bg-gray-50 border-r border-gray-200">
-          <Link href="/" onClick={() => setIsOpen(false)}>
-            <SheetHeader className="p-8">
-              <SheetTitle className="text-left text-3xl font-light text-gray-800 mb-2 tracking-wide">Jocelyn Pei-Hua YIN</SheetTitle>
+        <SheetContent 
+          side="left" 
+          className="p-0 w-lvw bg-gray-50 border-r border-gray-200 flex flex-col overflow-hidden"
+        >
+          <Link href="/" onClick={() => setIsOpen(false)} className="flex-shrink-0">
+            <SheetHeader className="p-8 pb-0">
+              <SheetTitle className="text-left text-3xl font-light text-gray-800 mb-2 pr-8 tracking-wide">Jocelyn Pei-Hua YIN</SheetTitle>
               <SheetDescription className="text-left text-sm text-gray-600 mb-6 font-light tracking-wider">Interior Designer</SheetDescription>
             </SheetHeader>
           </Link>
-          <ProjectList onLinkClick={() => setIsOpen(false)} />
+          <div className="flex-grow overflow-y-auto">
+            <ProjectList onLinkClick={() => setIsOpen(false)} />
+          </div>
         </SheetContent>
       </Sheet>
     </div>

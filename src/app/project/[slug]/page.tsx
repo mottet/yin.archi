@@ -136,7 +136,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const isDev = process.env.NODE_ENV === "development";
     const imagePrefix = isDev ? "/images" : "";
     return (
-        <div className="min-h-screen w-full mx-auto bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen w-full mx-auto bg-gray-50 pt-16 pb-12 md:py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
                 <h1 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">{title}</h1>
                 <p className="text-xl text-gray-600 mb-8 font-light">{type}</p>
