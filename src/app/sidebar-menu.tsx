@@ -11,13 +11,13 @@ import { Menu } from "lucide-react"
 import clsx from 'clsx';
 
 const projects = [
-  { slug: 'centre-culturel-ceramistes', name: "CENTRE CULTUREL et RESIDENCE de céramistes", type: "Interior" },
-  { slug: 'fablab-info-elec', name: "FABLAB d'informatique et d'électronique", type: "Interior" },
-  { slug: 'ecole-archi-st-lazard', name: "ECOLE d'architecture à Paris Saint-Lazare", type: "Interior" },
-  { slug: 'retail-invivo-synbio', name: "RETAIL Invivo Synbio", type: "Interior" },
-  { slug: 'meuble-vitrine-tama', name: "MEUBLE VITRINE Tama", type: "Design" },
-  { slug: 'desserte-vi-vant', name: "DESSERTE de coworking Vi-Vant", type: "Design" },
-  { slug: 'chaise-gagette', name: "CHAISE empilable Gagette", type: "Design" }
+  { slug: 'centre-culturel-ceramistes', name: "CENTRE CULTUREL et RESIDENCE de céramistes", type: "Architecture intérieure" },
+  { slug: 'fablab-info-elec', name: "FABLAB d'informatique et d'électronique", type: "Architecture intérieure" },
+  { slug: 'ecole-archi-st-lazard', name: "ECOLE d'architecture à Paris Saint-Lazare", type: "Architecture intérieure" },
+  { slug: 'retail-invivo-synbio', name: "RETAIL Invivo Synbio", type: "Architecture intérieure" },
+  { slug: 'meuble-vitrine-tama', name: "MEUBLE VITRINE Tama", type: "Design produit" },
+  { slug: 'desserte-vi-vant', name: "DESSERTE de coworking Vi-Vant", type: "Design produit" },
+  { slug: 'chaise-gagette', name: "CHAISE empilable Gagette", type: "Design produit" }
 ];
 
 function ProjectList({ onLinkClick }: { onLinkClick?: () => void }) {
@@ -40,8 +40,8 @@ function ProjectList({ onLinkClick }: { onLinkClick?: () => void }) {
           >
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="font-light text-gray-700 group-hover:text-gray-900 transition-colors text-lg tracking-wide">{project.name}</h3>
-                <p className="text-sm text-gray-500 group-hover:text-gray-700 font-light tracking-wider">{project.type}</p>
+                <h3 className="font-light text-gray-700 group-hover:text-gray-900 transition-colors text-base tracking-wide">{project.name}</h3>
+                <p className="text-xs text-gray-500 group-hover:text-gray-700 font-light tracking-wider">{project.type}</p>
               </div>
             </div>
           </Link>
@@ -57,8 +57,8 @@ export const DesktopSidebar = () => (
     <aside className="w-80 bg-gray-50 border-r border-gray-200 h-screen sticky top-0 overflow-hidden flex flex-col">
       <Link href="/">
         <div className="p-8 pb-0">
-          <h2 className="text-3xl font-light text-gray-800 mb-2 tracking-wide">Jocelyn Pei-Hua YIN</h2>
-          <p className="text-sm text-gray-600 mb-6 font-light tracking-wider">Interior Designer</p>
+          <h2 className="text-3xl font-light text-gray-800 mb-2 tracking-wide">Jocelyn Yin</h2>
+          <p className="text-sm text-gray-600 mb-6 font-light tracking-wider">Architecte d&apos;intérieur</p>
         </div>
       </Link>
       <ProjectList />
@@ -82,8 +82,8 @@ export const MobileSidebar = () => {
         >
           <Link href="/" onClick={() => setIsOpen(false)} className="flex-shrink-0">
             <SheetHeader className="p-8 pb-0">
-              <SheetTitle className="text-left text-3xl font-light text-gray-800 mb-2 pr-8 tracking-wide">Jocelyn Pei-Hua YIN</SheetTitle>
-              <SheetDescription className="text-left text-sm text-gray-600 mb-6 font-light tracking-wider">Interior Designer</SheetDescription>
+              <SheetTitle className="text-left text-3xl font-light text-gray-800 mb-2 pr-8 tracking-wide">Jocelyn Yin</SheetTitle>
+              <SheetDescription className="text-left text-sm text-gray-600 mb-6 font-light tracking-wider">Architecte d&apos;intérieur</SheetDescription>
             </SheetHeader>
           </Link>
           <div className="flex-grow overflow-y-auto">
