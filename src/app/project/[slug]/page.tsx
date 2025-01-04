@@ -16,7 +16,7 @@ interface ProjectPageProps {
 const projects: Record<string, ProjectPageProps> = {
     "centre-culturel-ceramistes": {
         title: "CENTRE CULTUREL et RESIDENCE de céramistes",
-        type: "Interior",
+        type: "Architecture intérieure",
         descriptions: [
             "En immersion dans la nature, situé à la frontière franco-allemande à Sarreguemines, ce centre culturel et résidence de céramistes vise à répondre à la question suivante : Comment aider les artisans céramistes à mettre en valeur leurs créations tout en sensibilisant le public à l'importance du savoir-faire dans leur quotidien ?",
             "Pour cela, le centre favorise la collaboration entre artisans céramistes afin d'enrichir leurs pratiques et de partager leurs expériences. Il offre un espace inspirant aux artisans céramistes, leur permettant de se ressourcer créativement et d'expérimenter de nouvelles techniques. De plus, le centre promeut auprès du public local les arts de la céramique. Enfin, des cérémonies du thé sont organisées pour montrer l'impact culturel que peut avoir l'artisanat, tout en faisant voyager les visiteurs.",
@@ -46,7 +46,7 @@ const projects: Record<string, ProjectPageProps> = {
     },
     "fablab-info-elec": {
         title: "FABLAB d'informatique et d'électronique",
-        type: "Interior",
+        type: "Architecture intérieure",
         descriptions: [
             "Le site se trouve dans le 19e arrondissement de Paris, à l'angle de la Villette, un quartier dynamique et culturel. Nous proposons d'y créer un FabLab, un lieu de rencontre où le public peut venir échanger, apprendre et fabriquer. Situé au bord d'une darse, ce lieu sera à la fois accessible et attractif.",
             "La transparence est choisie comme thème central pour attirer les visiteurs et encourager les interactions. Ce FabLab, dédié à l'informatique et à l'électronique, mettra en valeur le travail des participants tout en favorisant les échanges. L'espace architectural sera conçu pour éveiller la curiosité des visiteurs et les inciter à découvrir et expérimenter dans un cadre ouvert et accueillant.",
@@ -72,7 +72,7 @@ const projects: Record<string, ProjectPageProps> = {
     },
     "ecole-archi-st-lazard": {
         title: "ECOLE d'architecture à Paris Saint-Lazare",
-        type: "Interior",
+        type: "Architecture intérieure",
         descriptions: [
             "Le Site\nLe site est situé dans une halle ferroviaire construite en 1886, au 1, rue de Saint-Pétersbourg, Paris 8, au cœur du quartier central des affaires. Vestige de l'architecture industrielle parisienne, cette halle bénéficie d'un accès facile, se trouvant entre la gare Saint-Lazare et les stations de métro Europe et Rome, dans un quartier animé.",
             "Problématique\nComment transformer un tiers de cette halle, actuellement dédiée à la messagerie et aux bureaux, en un espace d'apprentissage dynamique et stimulant pour une école d'architecture ? Le projet doit relever des défis tels que la pollution sonore, le manque de lumière naturelle et l'inconfort thermique, tout en préservant les éléments structurels pour valoriser le bâtiment existant.",
@@ -93,14 +93,14 @@ const projects: Record<string, ProjectPageProps> = {
     },
     "retail-invivo-synbio": {
         title: "RETAIL Invivo Synbio",
-        type: "Interior",
+        type: "Architecture intérieure",
         descriptions: [
             "Ceci est un projet de groupe. Nous avons créé ce concept store selon les besoins de notre client, InVivo Retail, qui est le premier groupe coopératif agricole en France. La recherche d'Invivo Retail consiste à trouver une idée de nouveau concept store responsable, simple, authentique et audacieux afin de rendre le groupe incontournable sur le marché comme jardinerie de demain."
         ]
     },
     "meuble-vitrine-tama": {
         title: "MEUBLE VITRINE Tama",
-        type: "Design",
+        type: "Design produit",
         descriptions: [
             "Tama vise à mettre en valeur la créativité des artisans céramistes dans l'art de la table. Avec des dimensions de L1300 x P390 x H1300 mm, ce meuble est fabriqué en chêne massif, avec un placage de chêne, et du papier de Procédés Chénel (600g) collé sur des profils métalliques. Ce meuble vitrine est conçu pour être à la fois esthétique et fonctionnel, offrant un espace élégant et raffiné pour exposer les œuvres des céramistes, tout en soulignant la beauté et la finesse de leur artisanat.",
             "Process de Fabrication\nLe meuble est d'abord assemblé en deux parties: une partie haute et une partie basse. Les pieds sont en forme de U en chêne massif. Les montants ont des trous réalisés par découpe numérique permettant d'y glisser les plateaux une fois les montants assemblés. Pour finir, il suffit de placer la partie haute sur les pieds ; le poids du meuble suffit à le stabiliser.\nRéalisé par ZAKA Design Meubles Agencements, échelle 1"
@@ -108,7 +108,7 @@ const projects: Record<string, ProjectPageProps> = {
     },
     "desserte-vi-vant": {
         title: "DESSERTE de coworking Vi-Vant",
-        type: "Design",
+        type: "Design produit",
         descriptions: [
             "Après la COVID, de plus en plus de personnes ont la possibilité de travailler depuis chez elles. Les bureaux flexibles sont devenus essentiels pour accompagner cette transition, où les employés ne viennent au bureau que trois fois par semaine. Cependant, dans ces espaces ouverts, il n'est pas pratique de stocker ses affaires personnelles lorsqu'on n'a pas de bureau attitré. C'est pourquoi j'ai voulu concevoir une desserte mobile qui améliore l'expérience de travail pour ceux qui n'ont pas de bureau personnel, en leur offrant confort et organisation.",
             "J'ai donc proposé un concept : le \"bureau étendu.\" Cette desserte mobile permet de ranger votre lunch box, sac, manteau, dossiers de travail ou ordinateur portable, et de l'emporter facilement avec vous, où que vous travailliez dans le bureau.",
@@ -117,7 +117,7 @@ const projects: Record<string, ProjectPageProps> = {
     },
     "chaise-gagette": {
         title: "CHAISE empilable Gagette",
-        type: "Design",
+        type: "Design produit",
         descriptions: [
             "Le but de ce projet est de créer une chaise qui pourrait être empilée tout en étant convenable pour son environnement, un musée parisien. J'ai choisi le Musée d'Orsay comme client. Je vise à créer une élégante et pratique chaise qui peut relier son design à l'architecture conçue par Gae Aulenti. On peut voir clairement les éléments architecturaux de l'art nouveau et du modernisme dans le design d'Aulenti. Par conséquent, je veux aussi que ma chaise montre ces caractéristiques à travers la forme, les couleurs et les matières."
         ]
@@ -138,7 +138,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     return (
         <div className="min-h-screen w-full mx-auto bg-gray-50 pt-16 pb-12 md:py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-                <h1 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">{title}</h1>
+                <h1 className="font-playfair text-4xl font-light text-gray-900 mb-2 tracking-wide">{title}</h1>
                 <p className="text-xl text-gray-600 mb-8 font-light">{type}</p>
 
                 <div className="prose prose-lg text-gray-600 font-light leading-relaxed mb-12">

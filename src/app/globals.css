@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .font-playfair {
+    font-family: var(--font-playfair-display);
+  }
 }
 
 @layer base {

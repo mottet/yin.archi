@@ -40,7 +40,7 @@ function ProjectList({ onLinkClick }: { onLinkClick?: () => void }) {
           >
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="font-light text-gray-700 group-hover:text-gray-900 transition-colors text-base tracking-wide">{project.name}</h3>
+                <h3 className="font-playfair font-light text-gray-700 group-hover:text-gray-900 transition-colors text-base tracking-wide">{project.name}</h3>
                 <p className="text-xs text-gray-500 group-hover:text-gray-700 font-light tracking-wider">{project.type}</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ export const DesktopSidebar = () => (
     <aside className="w-80 bg-gray-50 border-r border-gray-200 h-screen sticky top-0 overflow-hidden flex flex-col">
       <Link href="/">
         <div className="p-8 pb-0">
-          <h2 className="text-3xl font-light text-gray-800 mb-2 tracking-wide">Jocelyn Yin</h2>
+          <h2 className="font-playfair text-3xl font-light text-gray-800 mb-2 tracking-wide">jocelyn yin</h2>
           <p className="text-sm text-gray-600 mb-6 font-light tracking-wider">Architecte d&apos;intérieur</p>
         </div>
       </Link>
@@ -82,7 +82,7 @@ export const MobileSidebar = () => {
         >
           <Link href="/" onClick={() => setIsOpen(false)} className="flex-shrink-0">
             <SheetHeader className="p-8 pb-0">
-              <SheetTitle className="text-left text-3xl font-light text-gray-800 mb-2 pr-8 tracking-wide">Jocelyn Yin</SheetTitle>
+              <SheetTitle className="font-playfair text-left text-3xl font-light text-gray-800 mb-2 pr-8 tracking-wide">jocelyn yin</SheetTitle>
               <SheetDescription className="text-left text-sm text-gray-600 mb-6 font-light tracking-wider">Architecte d&apos;intérieur</SheetDescription>
             </SheetHeader>
           </Link>

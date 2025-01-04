@@ -15,7 +15,7 @@ export default function HomePage() {
         />
         <div className="md:hidden absolute inset-0">
           <div className="px-10 py-24 text-right">
-            <h2 className="text-3xl font-light text-gray-100 mb-2 tracking-wide">Jocelyn Yin</h2>
+            <h2 className="font-playfair text-3xl font-light text-gray-100 mb-2 tracking-wide">jocelyn yin</h2>
             <p className="text-sm text-gray-200 mb-6 font-light tracking-wider">Architecte d&apos;intérieur</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function HomePage() {
         </div>
         <h3 className="text-xl font-semibold mt-8 mb-4 text-gray-800">Expertises</h3>
         <ul className="grid grid-cols-2 gap-2 text-gray-600">
-          <li>• Aménagement de l'espace</li>
+          <li>• Aménagement de l&apos;espace</li>
           <li>• Modélisation et rendu 3D</li>
           <li>• Théorie des couleurs</li>
           <li>• Conception durable</li>
@@ -69,7 +69,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-6">
         <div className="max-w-3xl mx-auto px-6 text-center text-gray-500 text-sm">
-          <p>&copy; 2024 Jocelyn Yin architecte d&apos;intérieur. Tous droits réservés.</p>
+          <p>&copy; 2024 jocelyn yin architecte d&apos;intérieur. Tous droits réservés.</p>
         </div>
       </footer>
     </main>

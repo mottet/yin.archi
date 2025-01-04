@@ -14,8 +14,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const playfairDisplayFont = localFont({
+  src: "./fonts/PlayfairDisplay-VariableFont_wght.ttf",
+  variable: "--font-playfair-display",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
-  title: "Jocelyn Yin | Architecte d'intérieur",
+  title: "jocelyn yin | Architecte d'intérieur",
   description: "Architecte d'intérieur",
 };
 
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplayFont.variable} antialiased`}
       >
         <div className="min-h-screen bg-gray-50 flex">
           <Sidebar />
