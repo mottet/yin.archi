@@ -33,8 +33,8 @@ const projects: Record<string, ProjectPageProps> = {
             { name: "image SDT escalier_CShading_LightMix", width: 1000, height: 1000 },
             { name: "Salon de thé à étage_CShading_LightMix", width: 1000, height: 1000 },
             { name: "Terrain", width: 2000, height: 1000 },
-            { name: "PLAN _atelier et residence RDC_50e", width: 2000, height: 810 },
-            { name: "PLAN _atelier et residence R+1_50e", width: 2000, height: 430 },
+            { name: "01 PLAN _atelier et residence RDC", width: 2000, height: 810 },
+            { name: "02 PLAN _atelier et residence R+1", width: 2000, height: 430 },
             { name: "Résidence Atelier Coupe AA 50e", width: 2000, height: 621 },
             { name: "Résidence Coupe BB 50e_frist try", width: 1414, height: 1000 },
             { name: "Résidence Coupe CC 50e", width: 1414, height: 1000 },
@@ -64,9 +64,13 @@ const projects: Record<string, ProjectPageProps> = {
             { name: "Interior 5_connect to the gym", width: 1333, height: 1000 },
             { name: "Interior 7_R+1 going through", width: 1333, height: 1000 },
             { name: "plan de situation_meter-A2_", width: 1379, height: 1000 },
-            { name: "Rough_on the bridge", width: 1400, height: 1000 },
             { name: "Rough_reception", width: 1389, height: 1000 },
+            { name: "Rough_on the bridge", width: 1400, height: 1000 },
             { name: "Rough_under the bridge", width: 1187, height: 1000 },
+            { name: "04_PLAN rdc-01", width: 1389, height: 1000 },
+            { name: "05_PLAN R+1", width: 1389, height: 1000 },
+            { name: "06_COUPE longitudinal-01", width: 1389, height: 1000 },
+            { name: "07_COUPE transversale-01", width: 1389, height: 1000 },
             { name: "ZOOM plan_A1-R+1_50e_couleur", width: 1782, height: 1000 }
         ]
     },
@@ -86,6 +90,11 @@ const projects: Record<string, ProjectPageProps> = {
             { name: "04_R+1_vue vers la salles de cours", width: 1556, height: 1000 },
             { name: "05_R+1_from one end to the other toward the tympan", width: 1556, height: 1000 },
             { name: "06_vue vers le tympan", width: 1556, height: 1000 },
+            { name: "01_PLAN rdc", width: 1556, height: 1000 },
+            { name: "02_PLAN r+1", width: 1556, height: 1000 },
+            { name: "03_COUPE longitudinal-01", width: 1556, height: 1000 },
+            { name: "04_COUPE transversale", width: 1556, height: 1000 },
+            { name: "05_CONCPET_diagram_colored", width: 1556, height: 1000 },
             { name: "1200px-Genie_civil_1886_A6_T9_N13_P194_messageries_saint_lazare", width: 1200, height: 604 },
             { name: "1280px-Genie_civil_1886_A6_T9_N13_P193_messageries_saint_lazare", width: 1280, height: 964 },
             { name: "Quai8-bw", width: 950, height: 631 }
@@ -96,6 +105,15 @@ const projects: Record<string, ProjectPageProps> = {
         type: "Architecture intérieure",
         descriptions: [
             "Ceci est un projet de groupe. Nous avons créé ce concept store selon les besoins de notre client, InVivo Retail, qui est le premier groupe coopératif agricole en France. La recherche d'Invivo Retail consiste à trouver une idée de nouveau concept store responsable, simple, authentique et audacieux afin de rendre le groupe incontournable sur le marché comme jardinerie de demain."
+        ],
+        imagesFolder: "/Invivo",
+        images: [
+            { name: "01 Entrace", width: 2560, height: 1440 },
+            { name: "02 left global view", width: 2560, height: 1440 },
+            { name: "03 night parking", width: 2560, height: 1440 },
+            { name: "04 en haut", width: 2560, height: 886 },
+            { name: "05 night view de potager", width: 2560, height: 1440 },
+            { name: "06 page10", width: 2560, height: 1747 }
         ]
     },
     "meuble-vitrine-tama": {
@@ -104,6 +122,11 @@ const projects: Record<string, ProjectPageProps> = {
         descriptions: [
             "Tama vise à mettre en valeur la créativité des artisans céramistes dans l'art de la table. Avec des dimensions de L1300 x P390 x H1300 mm, ce meuble est fabriqué en chêne massif, avec un placage de chêne, et du papier de Procédés Chénel (600g) collé sur des profils métalliques. Ce meuble vitrine est conçu pour être à la fois esthétique et fonctionnel, offrant un espace élégant et raffiné pour exposer les œuvres des céramistes, tout en soulignant la beauté et la finesse de leur artisanat.",
             "Process de Fabrication\nLe meuble est d'abord assemblé en deux parties: une partie haute et une partie basse. Les pieds sont en forme de U en chêne massif. Les montants ont des trous réalisés par découpe numérique permettant d'y glisser les plateaux une fois les montants assemblés. Pour finir, il suffit de placer la partie haute sur les pieds ; le poids du meuble suffit à le stabiliser.\nRéalisé par ZAKA Design Meubles Agencements, échelle 1"
+        ],
+        imagesFolder: "/Tama",
+        images: [
+            { name: "01 Book 2024 p201", width: 2560, height: 1811 },
+            { name: "02 Book 2024 p202", width: 2560, height: 1811 }
         ]
     },
     "desserte-vi-vant": {
@@ -113,6 +136,11 @@ const projects: Record<string, ProjectPageProps> = {
             "Après la COVID, de plus en plus de personnes ont la possibilité de travailler depuis chez elles. Les bureaux flexibles sont devenus essentiels pour accompagner cette transition, où les employés ne viennent au bureau que trois fois par semaine. Cependant, dans ces espaces ouverts, il n'est pas pratique de stocker ses affaires personnelles lorsqu'on n'a pas de bureau attitré. C'est pourquoi j'ai voulu concevoir une desserte mobile qui améliore l'expérience de travail pour ceux qui n'ont pas de bureau personnel, en leur offrant confort et organisation.",
             "J'ai donc proposé un concept : le \"bureau étendu.\" Cette desserte mobile permet de ranger votre lunch box, sac, manteau, dossiers de travail ou ordinateur portable, et de l'emporter facilement avec vous, où que vous travailliez dans le bureau.",
             "J'ai choisi des matériaux comme la porcelaine, le bois et le feutre parce que je souhaite que les gens puissent immédiatement associer ce qu'ils peuvent y ranger, en se basant sur les qualités naturelles de chaque matériau."
+        ],
+        imagesFolder: "/Vi-Vant",
+        images: [
+            { name: "01 Book 2024 p203", width: 2560, height: 1811 },
+            { name: "02 Book 2024 p204", width: 2560, height: 1811 }
         ]
     },
     "chaise-gagette": {
@@ -120,6 +148,11 @@ const projects: Record<string, ProjectPageProps> = {
         type: "Design produit",
         descriptions: [
             "Le but de ce projet est de créer une chaise qui pourrait être empilée tout en étant convenable pour son environnement, un musée parisien. J'ai choisi le Musée d'Orsay comme client. Je vise à créer une élégante et pratique chaise qui peut relier son design à l'architecture conçue par Gae Aulenti. On peut voir clairement les éléments architecturaux de l'art nouveau et du modernisme dans le design d'Aulenti. Par conséquent, je veux aussi que ma chaise montre ces caractéristiques à travers la forme, les couleurs et les matières."
+        ],
+        imagesFolder: "/Gagette",
+        images: [
+            { name: "01 page23", width: 2560, height: 1811 },
+            { name: "02 page24", width: 2560, height: 1811 }
         ]
     }
 };
