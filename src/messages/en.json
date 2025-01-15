@@ -1,0 +1,83 @@
+{
+  "home": {
+    "title": "jocelyn yin",
+    "subtitle": "Interior Architect",
+    "about": {
+      "title": "About me",
+      "description1": "Graduating in 2024 with a Master's in Interior Architecture and 2 years of experience at alfred studio, I participate in all phases of projects, from initial design to construction supervision. My role includes creating plans, sections, and 3D visuals for presentations, as well as collaborating with clients, suppliers, and contractors to bring projects to life.",
+      "description2": "After studying in the United States and Taiwan, I developed a great openness to different cultures and speak fluent English, Mandarin, and French. My passion lies in creating spatial relationships that enrich life experiences, and I firmly believe in circular economy-focused design, aiming to reduce waste and improve long-term quality of life.",
+      "expertise": {
+        "title": "Expertise",
+        "items": {
+          "1": "Space Planning",
+          "2": "3D Modeling and Rendering",
+          "3": "Color Theory",
+          "4": "Sustainable Design",
+          "5": "Project Management",
+          "6": "Custom Furniture Design"
+        }
+      },
+      "software": {
+        "title": "Software",
+        "items": {
+          "1": "AutoCAD",
+          "2": "3DS Max",
+          "3": "SketchUp",
+          "4": "Adobe Ps",
+          "5": "Adobe Ai",
+          "6": "Adobe Id",
+          "7": "Office Suite",
+          "8": "Revit"
+        }
+      },
+      "languages": {
+        "title": "Languages",
+        "items": {
+          "1": "French (Fluent)",
+          "2": "Chinese (Native)",
+          "3": "English (Bilingual)"
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 jocelyn yin interior architect. All rights reserved."
+  },
+  "projects": {
+    "centre-culturel-ceramistes": {
+      "name": "CULTURAL CENTER and CERAMISTS RESIDENCE",
+      "type": "Interior Architecture", 
+      "descriptions": "<p>Immersed in nature and located on the French-German border in Sarreguemines, this cultural center and ceramists' residence aims to address the following question: How can we help ceramic artisans showcase their creations while raising public awareness about the importance of craftsmanship in their daily lives?</p><p>To achieve this, the center promotes collaboration between ceramic artisans to enrich their practices and share experiences. It provides an inspiring space for ceramic artisans, allowing them to creatively recharge and experiment with new techniques. Additionally, the center promotes ceramic arts to the local public. Finally, tea ceremonies are organized to demonstrate the cultural impact of craftsmanship while taking visitors on a cultural journey.</p><p>Residence and Ceramic Workshop<br></br>The goal is to bring artisans and the public together. I therefore propose installing the residence and ceramic workshop in the long building, allowing artisans to easily access their work, meet people, and share their creations. The residence becomes a living space and exchange hub between artisans, while the workshop, open to the public, offers a space to learn and create pottery. Involving people in craftsmanship helps them discover the value of handmade work. Moreover, the workshop helps reduce energy consumption by grouping firings together.</p><p>Tea Pavilion<br></br>In Asia, ceramics and tea are inseparable, forming a cultural bridge that invites people to discover the art of tea. This space highlights the cultural impact of artisans while offering a serene break for visitors and artisans during tea tasting.</p>"
+    },
+    "fablab-info-elec": {
+      "name": "IT and Electronics FABLAB",
+      "type": "Interior Architecture",
+      "descriptions": "<p>The site is located in the 19th arrondissement of Paris, at the corner of La Villette, a dynamic and cultural district. We propose creating a FabLab, a meeting place where the public can come to exchange, learn, and create. Located along a dock, this place will be both accessible and attractive.</p><p>Transparency is chosen as the central theme to attract visitors and encourage interactions. This FabLab, dedicated to IT and electronics, will showcase participants' work while promoting exchanges. The architectural space will be designed to spark visitors' curiosity and encourage them to discover and experiment in an open and welcoming environment.</p><p>I opted for a FabLab specialized in IT and electronics to provide an environment where people can explore, learn, and create in fields essential to our digital age. My intention is to stimulate innovation and collaboration by providing tools and resources that enable people to bring ideas to life, experiment with new technologies, and contribute to a community of creators and innovators. I want this space to become a place where everyone feels free to move around, explore, and fully immerse themselves in the technological universe.</p><p>MATERIALS<br></br>The floor is primarily raw concrete. The cubes are made of wooden structures with glass sides, while cork is used for flooring inside the cubes to reduce noise.</p>"
+    },
+    "ecole-archi-st-lazard": {
+      "name": "Architecture SCHOOL at Paris Saint-Lazare",
+      "type": "Interior Architecture",
+      "descriptions": "<p>The Site<br></br>The site is located in a railway hall built in 1886, at 1 rue de Saint-Pétersbourg, Paris 8, in the heart of the central business district. A remnant of Parisian industrial architecture, this hall benefits from easy access, situated between Saint-Lazare station and Europe and Rome metro stations, in a lively neighborhood.</p><p>Challenge<br></br>How can we transform one-third of this hall, currently dedicated to messaging and offices, into a dynamic and stimulating learning space for an architecture school? The project must address challenges such as noise pollution, lack of natural light, and thermal discomfort, while preserving structural elements to enhance the existing building.</p><p>Project<br></br>The goal is to create a 3,250 m² architecture school, designed to accommodate a total of 250 to 300 students and staff. This school must embody the idea of tomorrow's learning institution, a place where ideas are shared, where people actively engage, participate, observe, and grow from each other.</p>"
+    },
+    "retail-invivo-synbio": {
+      "name": "RETAIL Invivo Synbio",
+      "type": "Interior Architecture",
+      "descriptions": "<p>This is a group project. We created this concept store according to our client's needs, InVivo Retail, which is the leading agricultural cooperative group in France. InVivo Retail's research aims to find a new responsible, simple, authentic, and bold concept store idea to make the group essential in the market as the garden center of tomorrow.</p>"
+    },
+    "meuble-vitrine-tama": {
+      "name": "Tama DISPLAY CABINET",
+      "type": "Product Design",
+      "descriptions": "<p>Tama aims to showcase ceramic artisans' creativity in tableware. With dimensions of L1300 x W390 x H1300 mm, this furniture is made of solid oak, with oak veneer, and Procédés Chénel paper (600g) glued to metal profiles. This display cabinet is designed to be both aesthetic and functional, offering an elegant and refined space to exhibit ceramists' works while highlighting the beauty and finesse of their craftsmanship.</p><p>Manufacturing Process<br></br>The furniture is first assembled in two parts: an upper part and a lower part. The legs are U-shaped in solid oak. The uprights have holes made by digital cutting allowing the shelves to slide in once the uprights are assembled. Finally, the upper part is placed on the legs; the weight of the furniture is sufficient to stabilize it.<br></br>Made by ZAKA Design Meubles Agencements, 1:1 scale</p>"
+    },
+    "desserte-vi-vant": {
+      "name": "Vi-Vant COWORKING CART",
+      "type": "Product Design",
+      "descriptions": "<p>After COVID, more and more people have the opportunity to work from home. Flexible offices have become essential to support this transition, where employees only come to the office three times a week. However, in these open spaces, it's not practical to store personal belongings when you don't have an assigned desk. That's why I wanted to design a mobile cart that improves the work experience for those without a personal desk, offering them comfort and organization.</p><p>I therefore proposed a concept: the \"extended desk.\" This mobile cart allows you to store your lunch box, bag, coat, work files, or laptop, and easily take it with you wherever you work in the office.</p><p>I chose materials like porcelain, wood, and felt because I want people to immediately associate what they can store based on each material's natural qualities.</p>"
+    },
+    "chaise-gagette": {
+      "name": "Gagette STACKABLE CHAIR",
+      "type": "Product Design",
+      "descriptions": "<p>The goal of this project is to create a chair that could be stacked while being suitable for its environment, a Parisian museum. I chose the Musée d'Orsay as the client. I aim to create an elegant and practical chair that can connect its design to the architecture designed by Gae Aulenti. One can clearly see the architectural elements of Art Nouveau and modernism in Aulenti's design. Therefore, I also want my chair to show these characteristics through form, colors, and materials.</p>"
+    }
+  }
+} 
