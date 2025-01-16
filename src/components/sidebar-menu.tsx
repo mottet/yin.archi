@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import { ScrollArea } from "@/components/ui/scroll-area"
-import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
@@ -10,6 +9,7 @@ import { Menu } from "lucide-react"
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/language-switcher';
+import { Link } from '@/i18n/routing';
 
 const PROJECT_SLUGS = [
   'centre-culturel-ceramistes',
